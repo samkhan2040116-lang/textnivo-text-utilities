@@ -1,2 +1,64 @@
-# textnivo-text-utilities
-JavaScript text utilities for cleaning, formatting and analyzing text.
+
+# TextNivo Text Utilities
+
+A collection of simple JavaScript utilities for cleaning,
+formatting, and analyzing text.
+
+This open-source project provides reusable functions for
+common text-processing tasks.
+
+## Features
+
+- Word counting
+- Character counting
+- Removing extra whitespace
+- Uppercase conversion
+- Lowercase conversion
+- Text reversal
+- Removing empty lines
+
+## Installation
+
+Clone this repository:
+
+```bash
+git clone https://github.com/samkhan2040116-lang/textnivo-text-utilities.git
+```
+
+## Usage
+
+Import the functions into your Node.js project:
+
+```javascript
+const {
+  countWords,
+  removeExtraSpaces,
+  reverseText
+} = require("./text-utils");
+
+console.log(countWords("Hello JavaScript world"));
+// 3
+
+console.log(removeExtraSpaces("Hello    world"));
+// Hello world
+
+console.log(reverseText("Hello"));
+// olleH
+```
+
+## Explore TextNivo
+
+For more online text-processing utilities, visit
+[TextNivo](https://textnivo.com/).
+
+TextNivo provides online tools for everyday text-related tasks.
+
+## Contributing
+
+Contributions, bug reports, and suggestions are welcome.
+
+## License
+
+No license has been selected yet. Please contact the
+repository owner before reusing the code outside this project.
+
