@@ -76,6 +76,44 @@ console.log(charactersToWords(3000));
 For an interactive calculator with conversion examples and additional explanations, try the [TextNivo Characters to Words Converter](https://textnivo.com/characters-to-words-converter/).
 
 **Note:** Character-to-word conversion is an estimate. Actual word counts depend on word length, spaces, and punctuation.
+## Character Counter for Application Forms
+
+Application forms, profile fields, short-answer questions, and other text inputs often have strict character limits.
+
+The `character-counter.js` utility provides a simple way to analyze text before submission. It returns:
+
+- Total characters
+- Characters without spaces
+- Word count
+- Remaining characters
+- Whether the specified limit has been exceeded
+
+### Example
+
+```javascript
+const { analyzeText } = require('./character-counter');
+
+const result = analyzeText(
+  "This is my application response.",
+  1000
+);
+
+console.log(result);
+```
+
+
+### Character Limits in Forms
+
+A live character counter can help users understand how much space remains while completing application forms, profile descriptions, feedback fields, and other limited text inputs.
+
+Some platforms count spaces while others may report characters with and without spaces separately.
+
+### Try the Online Character Counter
+
+If you need to check existing text without writing JavaScript, use the [TextNivo Character Counter](https://textnivo.com/character-counter/).
+
+It shows character counts with and without spaces, along with additional text statistics.
+
 
 ## License
 
